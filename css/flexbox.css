@@ -1,0 +1,102 @@
+/*CSS reset https://cssreset.com/scripts/html5-doctor-css-reset-stylesheet/#the-scripts*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+header {
+    /*display: block;*/
+    padding: 30px 0;
+    text-align: center;
+    background-color: lightskyblue;
+    height: 70px;
+    line-height: 70px;
+}
+
+header h1 {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer {
+    /*display: block;*/
+    padding: 30px 0;
+    text-align: center;
+    background-color: darkolivegreen;
+    height: 70px;
+    line-height: 70px;
+}
+
+footer p{
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    /*border: 5px solid darkseagreen;*/
+    width: 100%;
+    /*margin: 20px auto;*/
+    /*padding: 10px;*/
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav, aside {
+    /*border: 3px solid lightyellow;*/
+    width: 10%;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: lightgoldenrodyellow;
+    color: grey;
+    overflow: auto;
+}
+
+main {
+    /*border: 3px solid lightyellow;*/
+    width: 80%;
+    text-align: left;
+    margin: 10px;
+    padding: 5px;
+    background-color: lightcoral;
+    color: grey;
+    overflow: auto;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+
+    .flexbox {
+        flex-direction: column;
+
+        /*display: block;*/
+    }
+
+    nav, main, aside {
+        width: 100%;
+        /*margin: 10px;*/
+        /*padding: 5px;*/
+    }
+}
+
